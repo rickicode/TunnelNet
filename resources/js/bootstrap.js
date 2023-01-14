@@ -1,4 +1,5 @@
-window._ = require('lodash');
+import _ from 'lodash';
+window._ = _;
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -18,7 +19,8 @@ window.bootstrap = bootstrap;
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = require('axios');
+import axios from 'axios';
+window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -39,9 +41,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: true
 // });
 
-window.Chart = require('chart.js');
+import Chart from 'chart.js';
+window.Chart = Chart;
 
-window.Swal = require('sweetalert2');
+import Swal from 'sweetalert2';
+window.Swal = Swal;
 
 
-require('../../vendor/aliqasemzadeh/livewire-bootstrap-modal/resources/js/modals');
+import '../../vendor/aliqasemzadeh/livewire-bootstrap-modal/resources/js/modals';
