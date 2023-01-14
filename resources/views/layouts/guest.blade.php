@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        @vite('resources/js/app.js')
     </head>
     <body class="border-top-wide border-primary d-flex flex-column" x-data="{ darkTheme: $persist(false) }" :class="darkTheme ? '' : 'theme-dark'">
     <div class="page page-center">
