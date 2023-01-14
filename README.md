@@ -41,6 +41,6 @@ git push -u origin main
 5. `php artisan key:generate`
 6. Set your `.env` with credentials to your database server (`DB_*` settings) and your domain config (`APP_URL`).
 7. `php artisan migrate --seed`
-8. Build frontend with `npm run production` for production.
+8. Build frontend with `npm run build` for production.
 9. Run your server `php artisan serve`.
 10. Username:info@bap.local/Password:P@ssw0rd321
